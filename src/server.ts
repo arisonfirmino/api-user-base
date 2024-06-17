@@ -6,7 +6,7 @@ const app = Fastify({ logger: true });
 
 const start = async () => {
   await app.register(cors, {
-    origin: "http://localhost:3000",
+    origin: "https://user-base-one.vercel.app",
   });
   await app.register(routes);
 
